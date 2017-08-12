@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 980px;
+            height: 1386px;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 0 44px;
+        }
+        .header{
+            width: 892px;
+            height: 61px;
+            border-bottom: 2px solid #938e8c;
+
+        }
+        .header .redlogo{
+            width: 110px;
+            height: 61px;
+            background-color: #d45d5c;
+            float: left;
+        }
+        .header .redlogo p{
+            font-size: 12px;
+            font-family: 黑体;
+            color: white;
+            display: block;
+            -webkit-margin-before: 48px;
+            -webkit-margin-after: 0;
+            -webkit-margin-start: 0.5em;
+        }
+
+        .banner{
+            margin-top: 30px;
+            position: relative;
+            float: left;
+            width: 641px;
+            height: 301px;
+        }
+        .banner img{
+            position: absolute;
+            width: inherit;
+            height: inherit;
+        }
+        .banner .leftColor{
+            position: absolute;
+            left: 0;
+            float: left;
+            width: 191px;
+            height: inherit;
+            background-color: #428c59;
+            opacity: 0.5;
+        }
+        .banner .rightColor{
+            position: absolute;
+            right:0;
+            width: 191px;
+            height: inherit;
+            background-color: #cc7681;
+            opacity: 0.5;
+        }
+
+        .bannnerInfo{
+            margin-top:30px ;
+            width: 203px;
+            height: 301px;
+            border-top: 2px solid #938e8c;
+            float: right;
+        }
+        .bannnerInfo .caption{
+            font-family: 微软雅黑;
+            font-size: 24px;
+            text-decoration: underline;
+            line-height: 40px;
+            margin: 10px 0 0 0;
+        }
+        .bannnerInfo .technologe{
+            font-size: 12px;
+            line-height: 10px;
+            color: #676767;
+            font-family: 楷体;
+            margin: 0px;
+        }
+        .bannnerInfo .date{
+            font-size: 106px;
+            color: #75b86b;
+            font-style: italic;
+            margin: 0;
+            font-family: 微软雅黑;
+            margin-left: -15px;
+        }
+        .bannnerInfo .num,h4{
+            color: #cc8091;
+            font-family: 微软雅黑;
+
+        }
+        .bannnerInfo .num{
+            font-size: 55px;
+            float: left;
+            margin: 0;
+            margin-top: -15px;
+        }
+        .bannnerInfo h4{
+            margin: 0;
+            margin-top: -2px;
+        }
+        
+        .firstArticle{
+            width: 250px;
+            float: left;
+            margin-right: 20px;
+        }
+        .firstArticle h2{
+            font: 微软雅黑;
+            font-size: 16px;
+            color: #418c59;
+            text-decoration: underline;
+            margin-bottom: 0;
+        }
+        .firstArticle p{
+            font: 宋体;
+            font-size: 12px;
+            line-height: 16px;
+            color: #767777;
+        }
+        .secondArticle{
+            width: 200px;
+            float: left;
+            margin-right: 20px;
+        }
+        .secondArticle h2{
+            font: 微软雅黑;
+            font-size: 16px;
+            color: #d2994f;
+            text-decoration: underline;
+            margin-bottom: 0;
+        }
+        .secondArticle p{
+            font: 微软雅黑;
+            font-size: 12px;
+            line-height: 16px;
+            color: #231815;
+            opacity: 0.7;
+        }
+        .thirdArticle{
+            width: 140px;
+            float: left;
+        }
+        .thirdArticle h2{
+            font: 微软雅黑;
+            font-size: 16px;
+            color: #cc7680;
+            text-decoration: underline;
+            margin-bottom: 0;
+        }
+        .thirdArticle .p1{
+            font: 微软雅黑;
+            font-size: 12px;
+            line-height: 16px;
+            color: #231815;
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+        .thirdArticle .p2{
+            font: 微软雅黑;
+            font-size: 12px;
+            line-height: 16px;
+            font-style: italic;
+            color: #cd4a48;
+            opacity: 0.7;
+            margin: 0;
+        }
+
+        .forthArticle{
+            width: 415px;
+            float: left;
+        }
+        .forthArticle .title{
+            padding: 16px 0;
+            border-bottom: 2px solid #11456b;
+            margin-bottom: 16px;
+        }
+        .forthArticle .title .the{
+            font-size: 72px;
+            color: #f5e327;
+            font-family: 黑体;
+            font-style: italic;
+        }
+        .forthArticle .title .tech{
+            font-size: 42px;
+            color: #11456b;
+            font-family: 黑体;
+            line-height: 16px;
+        }
+        .forthArticle .title .qdjsly{
+            font-size: 33px;
+            color: #11456b;
+            font-family: 黑体;
+        }
+        .forthArticle .paragraph span{
+            font-size: 70px;
+            color: #f5e327;
+            font-family: 微软雅黑;
+            float: left;
+            display: inline-block;
+            margin: 0 10px 10px 0;
+        }
+        .forthArticle p{
+            font-size: 12px;
+            color: #767777;
+            font-family: 宋体;
+            line-height: 16px;
+            margin: 0;
+            text-align: justify;
+        }
+        .forthArticle img{
+            float: right;
+            margin: 16px 0 16px 16px;
+
+        }
+
+        .picture{
+            width: 458px;
+            height: 257px;
+            float: right;
+            position: relative;
+            margin-top: 16px;
+        }
+        .picture .qdjs{
+            width: inherit;
+            height: 61px;
+            background-color: rgba(0,0,0,0.4);
+            position: absolute;
+            margin-top: -64px;
+        }
+        .picture .qdjs .qianduanjishu{
+            font-size: 26px;
+            font-family: 微软雅黑;
+            color: #FFFFFF;
+            display: inline-block;
+            border-left: 3px solid #72b16a;
+            margin: 16px;
+            padding-left: 16px;
+            box-sizing: border-box;
+        }
+        .picture .qdjs .qianduanjishu2{
+            font-size: 12px;
+            font-family: 微软雅黑;
+            font-style: italic;
+            color: #72b16a;
+        }
+
+        .other{
+            width: 459px;
+            height: 318px;
+            background-color: blanchedalmond;
+            float: right;
+            margin-top: 30px;
+        }
+        .other ul{
+            list-style: disc;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <header class="header">
+        <div class="redlogo"><p>ife.baidu.com</p></div>
+    </header>
+    <div class="banner">
+        <img src="左上大图.png">
+        <div class="leftColor"></div>
+        <div class="rightColor"></div>
+    </div>
+    <div class="bannnerInfo">
+        <h2 class="caption">A<span style="font-size: 18px">BOUT</span> T<span style="font-size: 18px">ECHNOLOGY</span></h2>
+        <h3 class="technologe">About technologe about technologe  about technologe</h3>
+        <h1 class="date">700</h1>
+        <h3 class="num">3.2</h3>
+        <h4><span class="span1" style="font-size: 21px">css</span><br>
+            <span class="span2" style="font-size: 12px">cssssccsccscssc</span>
+        </h4>
+    </div>
+    <div class="firstArticle">
+        <h2>What</h2>
+        <p>
+            端前端前端端前端前端前端前端前端前端前
+            端前端前端前端前端前端前端前端端前端前
+            端端前端前端前端前端前端前端前端前端前
+            端前端前端前端前端前端端前端前端端前端
+            前端前端前端前端前端前端前端前端前端前
+        </p>
+    </div>
+    <div class="secondArticle">
+        <h2>When</h2>
+        <p>
+            端前端前端端前端前端前端前端前端前端前
+            端前端前端前端前端前端前端前端端前端前
+            端端前端前端前端前端前端前端前端前端前
+            端前端前端前端前端前端端前端前端端前端
+            前端前端前端前端前端前端前端前端前端前
+        </p>
+    </div>
+    <div class="thirdArticle">
+        <h2>How</h2>
+        <p class="p1">
+            端前端前端端前端前端前端前端前端前端前
+            端前端前端前端前端前端前端前端端前端前
+        </p><br>
+        <p class="p2">What-------- 40%<br>
+            What-------- 30%<br>
+            What-------- 30%</p>
+    </div>
+    <div class="forthArticle">
+        <div class="title">
+            <span class="the">THE</span>
+            <span class="tech">TECHNOLOGY<br>OF FRONT<br></span>
+            <span class="qdjsly">前端技术领域</span>
+        </div>
+        <div class="paragraph">
+            <span>前</span>
+            <p>前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端</p>
+            <img src="配图三.png">
+            <p style="text-indent: 2em">前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端</p>
+            <p style="text-indent: 2em">前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端</p>
+        </div>
+    </div>
+    <div class="picture">
+        <img src="配图二.png">
+        <div class="qdjs">
+            <span class="qianduanjishu">前端技术</span>
+            <span class="qianduanjishu2">前端技术前端技术</span>
+        </div>
+    </div>
+    <div class="other">
+        <ul>
+            <li>前端前端前端前端前端前端.......................前端</li>
+            <li>前端前端前端前端前端前端.......................前端</li>
+            <li>前端前端前端前端前端前端.......................前端</li>
+        </ul>
+        <div class="redcover">
+            <span>0</span>
+            <span>ONE TWO<br>THREE FOUR FIVE</span>
+            <span>hello world hello world<br>hello world</span>
+        </div>
+        <p><span>“</span>hello world hello world hello world hello world
+            hello world hello world hello world hello world hello world
+            hello world<span>”</span></p>
+    </div>
+    <footer class="footer"></footer>
+    </div>
+
+</div>
+
+</body>
+</html>
