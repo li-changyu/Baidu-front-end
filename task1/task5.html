@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>html基础</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:#b0b0b0;
+        }
+        .message1,.massage2,.messagelast,.pic{
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: white;
+            margin: 10px 440px 0 10px;
+            padding: 10px;
+        }
+        .messageend{
+            position: absolute;
+            top: 52px;
+            right:15px;
+            width: 400px;
+            margin: 10px;
+            background-color: white;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .title{
+            text-align: center;
+            border:1px solid;
+            font-size:12px;
+            width:100%;
+            background:#363636;
+            height:50px;
+        }
+        .baidulogo {
+
+            /*border: 1px solid black;*/
+            float: left;
+            padding-left: 20px;
+        }
+        .list{
+            float: right;
+        }
+        .title ul li{
+            border: 1px solid black;
+            padding: auto;
+            margin-right:20px;
+            float:left;
+        }
+        .title a{
+            color:#FFF;
+        }
+        .title .import{
+            color:#b0b0b0;
+        }
+        a {
+            text-decoration: none;
+        }
+        .picture{
+            padding: 10px;
+            margin: 10px;
+            float: left;
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .pic:after{
+            display: table;
+            content: '';
+            clear: both;
+        }
+        p{
+            text-indent: 2em;
+            font-size:15px;
+        }
+        h1{
+            font-size:20px;
+        }
+        h2{
+            font-size:15px;
+        }
+        input{
+            font-size:12px;
+        }
+        .messagelast .tablehead{
+            border: 1px solid;
+            margin: 0;
+            border-bottom: none;
+            height: 30px;
+        }
+        table{
+            font-size:15px;
+            font-family: "Microsoft YaHei UI";
+            font-weight: 800;
+            border-collapse: collapse;
+            width: 100%;
+            border:1px solid #b0b0b0;
+            table-layout:fixed;
+        }
+        table th{
+            background-color: black;
+            color: white;
+        }
+        .messageend h1{
+            border-left: 3px solid #b0b0b0;
+            padding-left: 10px;
+        }
+        form table{
+            font-size:12px;
+            border:none;
+            border-collapse: collapse;
+            border-spacing: 0;
+            vertical-align: center;
+            height:200px;
+        }
+        form table tr{
+            width: 30%;
+        }
+        form tr td:first-child{
+            text-align: right;
+        }
+        input[type="button"]{
+            display:block;
+            color:#FFF;
+            font-size:25px;
+            margin:0 auto;
+            width:90%;
+            border-radius: 10px;
+            background:#205AA7;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+<div class="title">
+    <div class="baidulogo">
+        <img src="baidu.png" width="75" height="50">
+    </div>
+    <div class="list">
+        <ul>
+            <li><a href="#">导航链接一</a></li>
+            <li><a href="#">导航链接一</a></li>
+            <li><a href="#">导航链接一</a></li>
+            <li><a href="#" class="import">导航链接一</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="message1">
+    <h2>文章一级标题</h2>
+    <h2>文章二级标题</h2>
+    <p>文章作者 文章发表时间</p>
+    <br>
+    <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落</p>
+    <p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<strong>有个加粗字体</strong>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+    <img src="pic.png">
+    <p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落，换行了<br>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很<strong>有个加粗字体</strong>长很长的段落这是一个很长很长的段落</p>
+</div>
+
+<div class="massage2">
+    <h1>另一篇文章一级标题</h1>
+    <h2>文章二级标题</h2>
+    <p>文章作者 文章发表时间</p>
+    <br>
+    <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落</p>
+    <p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+    <img src="pic.png" width="400px" height="300px">
+    <ul>
+        <li>列表项目一</li>
+        <li>列表项目一</li>
+        <li>列表项目一</li>
+        <li>列表项目一</li>
+    </ul>
+</div>
+
+<div class="pic">
+    <h1 >图片</h1>
+    <div class="picture">
+        <p>好看的<strong>图片</strong></p>
+        <img src="pic.png" width="200px" height="150px">
+    </div>
+    <div class="picture">
+        <p>好看的<strong>图片</strong></p>
+        <img src="pic.png" width="200px" height="150px">
+    </div>
+    <div class="picture">
+        <p>好看的<strong>图片</strong></p>
+        <img src="pic.png" width="200px" height="150px">
+    </div>
+    <div class="picture">
+        <p>好看的<strong>图片</strong></p>
+        mg src="pic.png" width="200px" height="150px">
+    </div>
+
+</div>
+
+<div class="messagelast">
+    <h1>最后一级标题</h1>
+    <h2>文章二级标题</h2>
+    <p> 文章作者 文章发表时间</p>
+    <ol style="list-style: none">
+        <li>排名1</li>
+        <li>排名1</li>
+        <li>排名1</li>
+    </ol>
+    <p class="tablehead"> 这是一个表格，给表格加了border</p>
+    <table border="1">
+        <tr>
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a>></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>总计</td>
+            <td colspan="2">1000</td>
+        </tr>
+    </table>
+</div>
+
+<div class="messageend">
+    <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label>请输入邮箱地址:</label></td>
+                <td><input type="text" value="这是一个文本输入框"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><span style="color: #b0b0b0;font-size: 10px">邮箱地址清按要求格式输入</span></td>
+            </tr>
+            <tr>
+                <td><label>请输入密码：</label></td>
+                <td><input type="text" value="这是一个文本输入框" ></td>
+            </tr>
+            <tr>
+                <td><label>请重复输入密码：</label></td>
+                <td><input type="text" value="这是一个文本输入框"></td>
+            </tr>
+            <tr>
+                <td></td><td><span style="color: #b0b0b0;font-size: 10px">密码请为6-16位英文数字</span></td>
+            </tr>
+            <tr>
+                <td><lable>性别：</lable></td>
+                <td>
+                    <input type="radio" name="sex1">男</input>
+                    <input type="radio" name="sex1">女</input>
+                </td>
+            </tr>
+            <tr>
+                <td><lable>城市：</lable></td>
+                <td>
+                    <select name="">
+                        <option value="0">北京</option>
+                        <option value="1">杭州</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><lable>爱好：</lable></td>
+                <td>
+                    <input type="checkbox" >运动</input>
+                    <input type="checkbox" >艺术</input>
+                    <input type="checkbox" >科学</input>
+                </td>
+            </tr>
+            <tr>
+                <td><lable>个人描述：</lable></td>
+                <td>
+				    		<textarea rows="5" cols="25">
+							这是一个自动换行的文本输入框
+							</textarea>
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="提交按钮">
+    </form>
+</div>
+
+</body>
