@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            margin: 0;
+            height: 56px;
+            width: 100%;
+        }
+        .head:after{
+            display: table;
+            content: "";
+            clear: both;
+        }
+        .head .logo{
+            float: left;
+            padding: 10px 20px;
+        }
+        .head span{
+            display: inline-block;
+            font-family: 黑体;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        .head .login{
+            display: inline-block;
+            float: right;
+            height: 56px;
+            box-sizing: border-box;
+            padding-right: 20px;
+        }
+        .head .login img{
+            display: inline-block;
+            margin: 25px 0 0 16px;
+
+        }
+        .head .login a{
+            display: inline-block;
+            margin: 25px 16px 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+            color: darkgrey;
+        }
+        .head a:hover{
+            color: #cc8091;
+        }
+        .head .menu{
+            float: right;
+            height: inherit;
+            margin-right: 30px;
+        }
+        .head .menu ul{
+            display: inline-block;
+            margin: 0;
+            height: inherit;
+        }
+        .head .menu ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 25px 16px 0 16px;
+            color: #b0b0b0;
+        }
+
+        .head .menu ul li .redline{
+            width: 96px;
+            height: 21px;
+            position: absolute;
+            margin-left: -16px;
+            border-bottom:3px solid #cc7681 ;
+        }
+        .head .menu ul li:nth-child(1):hover .redline{
+            margin-left:-16px;
+        }
+        .head .menu ul li:nth-child(2):hover .redline{
+            margin-left:80px;
+        }
+        .head .menu ul li:nth-child(3):hover .redline{
+            margin-left:176px;
+        }
+        .head .menu ul li:nth-child(4):hover .redline{
+            margin-left:272px;
+        }
+        .head .menu ul li:nth-child(3):hover .redline{
+            margin-left:368px;
+        }
+        .head .menu ul li a{
+            text-decoration: none;
+            font-size: 16px;
+            color: darkgrey;
+        }
+
+    </style>
+</head>
+<body>
+<header class="head">
+    <div class="logo">
+        <img src="book.png">
+        <span>新世界</span>
+    </div>
+    <div class="login">
+        <img src="user.png">
+        <a href="#">登录</a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li style="width: 64px;text-align: center"><div class="redline"></div><a href="#">首页</a></li>
+            <li><a href="#">最新活动</a></li>
+            <li><a href="#">项目介绍</a></li>
+            <li><a href="#">爱心社区</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+
+    </div>
+
+</header>
+</body>
+</html>

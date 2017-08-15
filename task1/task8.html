@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container{
+            max-width: 1200px;
+            width: 100%;
+            min-height: 1px;
+        }
+        .grid-container *{
+            box-sizing: border-box;
+        }
+        .grid-container:before,:after{
+            display: table;
+            content: "";
+            clear: both;
+        }
+        [class *='col-']{
+            float: left;
+            min-height: 1px;
+            padding: 10px;
+        }
+        [class *='col-']>p{
+            height: 50px;
+            padding:0;
+            margin: 0;
+            background-color: #eee;
+            border: 1px solid #999;
+        }
+        .col-1{
+            width: 8.33%;
+        }
+        .col-2{
+            width: 16.66%;
+        }
+        .col-3{
+            width: 25%;
+        }
+        .col-4{
+            width: 33.33%;
+        }
+        .col-6{
+            width: 50%;
+        }
+        @media all and (max-width: 768px){
+            .col-1 {
+                width: 16.66%;
+            }
+            .col-2 {
+                width: 66.66%;
+            }
+            .col-2:last-of-type  {
+                width: 25%;
+            }
+            .col-4 {
+                width: 50%;
+            }
+            .col-4:last-child {
+                width: 100%;
+            }
+            .col-6b:last-of-type {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="row">
+        <div class="col-4"><p>col-4</p></div>
+        <div class="col-4"><p>col-4</p></div>
+        <div class="col-4"><p>col-4</p></div>
+    </div>
+    <div class="row">
+        <div class="col-3"><p>col-3</p></div>
+        <div class="col-6"><p>col-6</p></div>
+        <div class="col-3"><p>col-3</p></div>
+    </div>
+    <div class="row">
+        <div class="col-1"><p>col-1</p></div>
+        <div class="col-1"><p>col-1</p></div>
+        <div class="col-2"><p>col-2</p></div>
+        <div class="col-2"><p>col-2</p></div>
+        <div class="col-6b"><p>col-6</p></div>
+    </div>
+</div>
+</body>
+</html>
